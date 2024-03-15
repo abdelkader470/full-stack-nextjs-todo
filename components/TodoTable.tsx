@@ -26,7 +26,7 @@ export default function TodoTable({ todos }: { todos: ITodo[] }) {
       </TableHeader>
       <TableBody>
         {todos.map((todo) => (
-          <TableRow key={todo.id}>
+          <TableRow key={todo?.id}>
             <TableCell className="font-medium">{todo?.id}</TableCell>
             <TableCell>{todo?.title}</TableCell>
             <TableCell>
